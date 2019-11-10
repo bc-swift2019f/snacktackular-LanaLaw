@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import GooglePlaces
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -17,8 +18,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        GMSPlacesClient.provideAPIKey("AIzaSyDn8JT5ErQutShTNP0VLtZ3DgVTjcXr2c8")
         FirebaseApp.configure()
         return true
+        //MOST RECENT: AIzaSyAfYzuqjrpCICcW7ABYjUatrPAymA0B5VI
+        // AIzaSyDx0G9CJe_kPXYsAncopPpS6XKfbbg1Et8
+        //START AT 9.4 TIME: 6:07
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
