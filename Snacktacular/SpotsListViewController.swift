@@ -23,12 +23,9 @@ class SpotsListViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
         authUI = FUIAuth.defaultAuthUI()
         // You need to adopt a FUIAuthDelegate protocol to receive callback
-        authUI.delegate = self as! FUIAuthDelegate
-        
-        
+        authUI?.delegate = self
         
         tableView.delegate = self
         tableView.dataSource = self

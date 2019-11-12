@@ -8,6 +8,7 @@
 
 import UIKit
 import GooglePlaces
+import Firebase
 
 
 class SpotDetailViewController: UIViewController {
@@ -39,6 +40,19 @@ class SpotDetailViewController: UIViewController {
         addressField.text = spot.address
     }
     
+    
+    func leaveViewController() {
+        print("Leaving VC")
+        let isPresentingInAddMode = presentingViewController is UINavigationController
+        if isPresentingInAddMode {
+            print("Is presenting in add mode")
+            dismiss(animated: true, completion: nil)
+        } else {
+            print("Is not presenting in add mode")
+            navigationController?.popViewController(animated: true)
+        }
+    }
+    
     @IBAction func photoButtonPressed(_ sender: UIButton) {
     }
     
@@ -46,6 +60,15 @@ class SpotDetailViewController: UIViewController {
     }
     
     @IBAction func saveButtonPressed(_ sender: UIBarButtonItem) {
+        print("Saved pressed")
+        spot.saveData { success in
+            print(success)
+            if success {
+                self.leaveViewController()
+            } else {
+                print("***ERROR: Couldn't leave this view controller because data wasn't saved.")
+            }
+        }
     }
     
     
@@ -58,12 +81,7 @@ class SpotDetailViewController: UIViewController {
     
     
     @IBAction func cancelButtonPressed(_ sender: UIBarButtonItem) {
-        let isPresentingInAddMode = presentingViewController is UINavigationController
-        if isPresentingInAddMode {
-            dismiss(animated: true, completion: nil)
-        } else {
-            navigationController?.popViewController(animated: true)
-        }
+        leaveViewController() 
     }
 }
 
