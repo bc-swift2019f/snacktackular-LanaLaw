@@ -11,10 +11,16 @@ import CoreLocation
 import Firebase
 import FirebaseUI
 import GoogleSignIn
+//import FirebaseAuthUI
+//import FirebaseGoogleAuthUI
 
 class SpotsListViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    
+    @IBOutlet weak var sortSegmentedControl: UISegmentedControl!
+    
+    
     var spots: Spots!
     var authUI: FUIAuth!
 
@@ -36,6 +42,7 @@ class SpotsListViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         spots.loadData {
+            self.sortBasedOnSegmentPressed()
             self.tableView.reloadData()
         }
     }
@@ -72,6 +79,28 @@ class SpotsListViewController: UIViewController {
             
         }
     }
+    
+    func sortBasedOnSegmentPressed() {
+        switch sortSegmentedControl.selectedSegmentIndex {
+        case 0: // A-Z
+            spots.spotArray.sort(by: {$0.name < $1.name})
+            print("To Do")
+        case 1: // Closest
+            print("To Do")
+        case 2: // Avg. Rating
+            print("To Do")
+        default:
+            print(" ***ERROR: Hey, you shouldn't have gotten here. Our segemented control should just have 3 segments")
+        }
+    }
+    
+    
+    @IBAction func sortSegmentPressed(_ sender: UISegmentedControl) {
+        sortBasedOnSegmentPressed()
+        
+    }
+    
+    
     
     
     @IBAction func signOutPressed(_ sender: UIBarButtonItem) {
