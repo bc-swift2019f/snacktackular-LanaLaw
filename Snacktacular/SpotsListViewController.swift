@@ -79,18 +79,6 @@ class SpotsListViewController: UIViewController {
     }
     
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "ShowSpot" {
-            let destination = segue.destination as! SpotDetailViewController
-            let selectedIndexPath = tableView.indexPathForSelectedRow!
-            destination.spot = spots.spotArray[selectedIndexPath.row]
-        } else {
-            if let selectedIndexPath = tableView.indexPathForSelectedRow{
-                tableView.deselectRow(at: selectedIndexPath, animated: true)
-            }
-            
-        }
-    }
     
     func sortBasedOnSegmentPressed() {
         switch sortSegmentedControl.selectedSegmentIndex {
