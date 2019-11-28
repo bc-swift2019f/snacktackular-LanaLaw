@@ -36,12 +36,6 @@ class Review {
         self.documentID = documentID
     }
     
-    convenience init() {
-        let currentUserID = Auth.auth().currentUser?.email ?? "Unknown User"
-        self.init(title: "", text: "", rating: 0, reviewerUserID: currentUserID, date: Date(), documentID: "")
-    }
-    
-    
     convenience init(dictionary: [String: Any]) {
         let title = dictionary["title"] as! String? ?? ""
         let text = dictionary["text"] as! String? ?? ""
@@ -52,6 +46,14 @@ class Review {
         let date = Date(timeIntervalSince1970: timeIntervalDate)
         self.init(title: title, text: text, rating: rating, reviewerUserID: reviewerUserID, date: date, documentID: "")
     }
+    
+    convenience init() {
+        let currentUserID = Auth.auth().currentUser?.email ?? "Unknown User"
+        self.init(title: "", text: "", rating: 0, reviewerUserID: currentUserID, date: Date(), documentID: "")
+    }
+    
+    
+ 
     
     
     
@@ -92,5 +94,3 @@ class Review {
         }
     }
 }
-
-
