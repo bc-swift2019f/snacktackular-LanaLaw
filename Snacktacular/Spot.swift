@@ -96,7 +96,7 @@ class Spot: NSObject, MKAnnotation {
         if self.documentID != "" {
             print("Has document ID")
             let ref = db.collection("spots").document(self.documentID)
-            ref.setData(dataToSave) { error in
+            ref.setData(dataToSave) { (error) in
                 if let error = error {
                     print("***ERROR: updating document \(self.documentID) \(error.localizedDescription)")
                     completed(false)

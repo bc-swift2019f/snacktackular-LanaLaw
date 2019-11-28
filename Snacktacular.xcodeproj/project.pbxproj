@@ -14,6 +14,7 @@
 		0A2ADC2F2374835C006D812F /* Spot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2ADC2E2374835C006D812F /* Spot.swift */; };
 		0A2ADC31237489C7006D812F /* Spots.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A2ADC30237489C7006D812F /* Spots.swift */; };
 		0AADEF462380CFDE00E88E3E /* Double+roundTo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AADEF452380CFDE00E88E3E /* Double+roundTo.swift */; };
+		0AD453D62386630D009DB5B4 /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AD453D52386630D009DB5B4 /* Review.swift */; };
 		3E0F960A20659D9000AE450D /* SpotsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0F960920659D9000AE450D /* SpotsTableViewCell.swift */; };
 		3E0F960C2065A17500AE450D /* SpotDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0F960B2065A17500AE450D /* SpotDetailViewController.swift */; };
 		3E0F960E2065AB6400AE450D /* SpotReviewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E0F960D2065AB6400AE450D /* SpotReviewsTableViewCell.swift */; };
@@ -34,6 +35,7 @@
 		0A2ADC2E2374835C006D812F /* Spot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spot.swift; sourceTree = "<group>"; };
 		0A2ADC30237489C7006D812F /* Spots.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spots.swift; sourceTree = "<group>"; };
 		0AADEF452380CFDE00E88E3E /* Double+roundTo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+roundTo.swift"; sourceTree = "<group>"; };
+		0AD453D52386630D009DB5B4 /* Review.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		3E0F960920659D9000AE450D /* SpotsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotsTableViewCell.swift; sourceTree = "<group>"; };
 		3E0F960B2065A17500AE450D /* SpotDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotDetailViewController.swift; sourceTree = "<group>"; };
 		3E0F960D2065AB6400AE450D /* SpotReviewsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotReviewsTableViewCell.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				3E8390DF206597F600512DEA /* AppDelegate.swift */,
 				0A2ADC30237489C7006D812F /* Spots.swift */,
 				0A2ADC2E2374835C006D812F /* Spot.swift */,
+				0AD453D52386630D009DB5B4 /* Review.swift */,
 				3E8390E1206597F600512DEA /* SpotsListViewController.swift */,
 				3E0F960920659D9000AE450D /* SpotsTableViewCell.swift */,
 				3E0F960B2065A17500AE450D /* SpotDetailViewController.swift */,
@@ -304,6 +307,7 @@
 				3E0F960C2065A17500AE450D /* SpotDetailViewController.swift in Sources */,
 				3E0F960E2065AB6400AE450D /* SpotReviewsTableViewCell.swift in Sources */,
 				0A24FF592381ECFA009CCAFE /* ReviewTableViewController.swift in Sources */,
+				0AD453D62386630D009DB5B4 /* Review.swift in Sources */,
 				0A24FF57238133CD009CCAFE /* UIView+addBorder.swift in Sources */,
 				3E0F960A20659D9000AE450D /* SpotsTableViewCell.swift in Sources */,
 				0A2ADC2F2374835C006D812F /* Spot.swift in Sources */,
