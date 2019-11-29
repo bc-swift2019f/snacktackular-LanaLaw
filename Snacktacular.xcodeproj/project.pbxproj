@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		0A10D0122375BD500031AF96 /* old-GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A10D0112375BD500031AF96 /* old-GoogleService-Info.plist */; };
+		0A1D8F3B23912B550062E7EC /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D8F3A23912B550062E7EC /* Photo.swift */; };
+		0A1D8F3D23912D510062E7EC /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A1D8F3C23912D510062E7EC /* Photos.swift */; };
 		0A24FF57238133CD009CCAFE /* UIView+addBorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A24FF56238133CD009CCAFE /* UIView+addBorder.swift */; };
 		0A24FF592381ECFA009CCAFE /* ReviewTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A24FF582381ECFA009CCAFE /* ReviewTableViewController.swift */; };
 		0A25146A238FA9ED00F1D841 /* Reviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A251469238FA9ED00F1D841 /* Reviews.swift */; };
@@ -30,6 +32,8 @@
 
 /* Begin PBXFileReference section */
 		0A10D0112375BD500031AF96 /* old-GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "old-GoogleService-Info.plist"; path = "../../../Downloads/old-GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0A1D8F3A23912B550062E7EC /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
+		0A1D8F3C23912D510062E7EC /* Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
 		0A24FF56238133CD009CCAFE /* UIView+addBorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+addBorder.swift"; sourceTree = "<group>"; };
 		0A24FF582381ECFA009CCAFE /* ReviewTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewTableViewController.swift; sourceTree = "<group>"; };
 		0A251469238FA9ED00F1D841 /* Reviews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reviews.swift; sourceTree = "<group>"; };
@@ -90,8 +94,10 @@
 				3E8390DF206597F600512DEA /* AppDelegate.swift */,
 				0A2ADC30237489C7006D812F /* Spots.swift */,
 				0A251469238FA9ED00F1D841 /* Reviews.swift */,
+				0A1D8F3A23912B550062E7EC /* Photo.swift */,
 				0A2ADC2E2374835C006D812F /* Spot.swift */,
 				0AD453D52386630D009DB5B4 /* Review.swift */,
+				0A1D8F3C23912D510062E7EC /* Photos.swift */,
 				3E8390E1206597F600512DEA /* SpotsListViewController.swift */,
 				3E0F960920659D9000AE450D /* SpotsTableViewCell.swift */,
 				3E0F960B2065A17500AE450D /* SpotDetailViewController.swift */,
@@ -305,8 +311,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A1D8F3B23912B550062E7EC /* Photo.swift in Sources */,
 				0A25146A238FA9ED00F1D841 /* Reviews.swift in Sources */,
 				3E8390E2206597F600512DEA /* SpotsListViewController.swift in Sources */,
+				0A1D8F3D23912D510062E7EC /* Photos.swift in Sources */,
 				3E0F96102065AC1A00AE450D /* SpotPhotosCollectionViewCell.swift in Sources */,
 				3E0F960C2065A17500AE450D /* SpotDetailViewController.swift in Sources */,
 				3E0F960E2065AB6400AE450D /* SpotReviewsTableViewCell.swift in Sources */,
