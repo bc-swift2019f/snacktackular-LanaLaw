@@ -11,6 +11,7 @@ import CoreLocation
 import Firebase
 import FirebaseUI
 import GoogleSignIn
+
 //import FirebaseAuthUI
 //import FirebaseGoogleAuthUI
 
@@ -26,7 +27,6 @@ class SpotsListViewController: UIViewController {
     var locationManager: CLLocationManager!
     var currentLocation: CLLocation!
 
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()

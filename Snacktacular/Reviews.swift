@@ -17,6 +17,9 @@ class Reviews {
         db = Firestore.firestore()
     }
     
+    
+    
+    
     func loadData(spot: Spot, completed: @escaping () -> ()) {
         
         guard spot.documentID != "" else {

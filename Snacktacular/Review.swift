@@ -22,8 +22,7 @@ class Review {
 //    }
     
     var dictionary: [String: Any] {
-        let timeIntervalDate = date.timeIntervalSince1970
-        return ["title": title, "text": text, "rating": rating, "reviewerUserID": reviewerUserID, "date": timeIntervalDate]
+        return ["title": title, "text": text, "rating": rating, "reviewerUserID": reviewerUserID, "date": date]
     }
     
     
@@ -41,9 +40,12 @@ class Review {
         let text = dictionary["text"] as! String? ?? ""
         let rating = dictionary["rating"] as! Int? ?? 0
         let reviewerUserID = dictionary["reviewerUserID"] as! String
+        print(dictionary["date"]!)
+        let timestamp = dictionary["date"] as! Timestamp
+        let date = timestamp.dateValue()
         // let date = dictionary["date"] as! Date? ?? Date()
-        let timeIntervalDate = dictionary["date"] as! TimeInterval? ?? TimeInterval()
-        let date = Date(timeIntervalSince1970: timeIntervalDate)
+//        let timeIntervalDate = dictionary["date"] as! TimeInterval? ?? TimeInterval()
+//        let date = Date(timeIntervalSince1970: timeIntervalDate)
         self.init(title: title, text: text, rating: rating, reviewerUserID: reviewerUserID, date: date, documentID: "")
     }
     

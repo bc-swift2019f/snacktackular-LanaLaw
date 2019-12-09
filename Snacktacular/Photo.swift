@@ -32,6 +32,24 @@ class Photo {
         self.init(image: UIImage(), description: "", postedBy: postedBy, date: Date(), documentUUID: "")
     }
     
+    
+    convenience init(dictionary: [String: Any]) {
+        let description = dictionary["description"] as! String? ?? ""
+        let postedBy = dictionary["postedBy"] as! String? ?? ""
+        // let date = dictionary["date"] as! Date? ?? Date()
+        
+      //  let timeIntervalDate = dictionary["date"] as! TimeInterval? ?? TimeInterval()
+     //   let date = Date(timeIntervalSince1970: timeIntervalDate)
+        print(dictionary["date"]!)
+        print(type(of: dictionary["date"]!))
+        let timeIntervalDate = dictionary["date"] as! Timestamp
+        let date: Date = timeIntervalDate.dateValue()
+      //  let date: Date = dictionary["date"] as! Date
+        self.init(image: UIImage(), description: description, postedBy: postedBy, date: date, documentUUID: "")
+    }
+    
+    
+    
     func saveData(spot: Spot, completed: @escaping (Bool) -> () ) {
         print("Saving")
         let db = Firestore.firestore()
